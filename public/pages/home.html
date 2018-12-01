@@ -1,0 +1,25 @@
+<div class="jumbotron">
+        <h1>Tasks</h1>
+        
+   
+		<form>
+                <div class="form-group">
+
+                
+                    <input type="text" class="form-control" placeholder="Task Name" ng-model="formData.name">
+                    <input type="text" class="form-control" placeholder="Description" ng-model="formData.descripe">
+
+                </div>
+
+               
+                <button type="submit"  ng-click="create()">Create Tasks</button>
+                <button type="submit"  ng-click="upp()">All Tasks </button>
+                <button type="submit"  ng-click="upp()">Delete Tasks</button>
+            </form>
+
+        <p ng-repeat="result in value">
+            {{result.name}} -- {{result.descripe}} 
+            <button type="button" ng-click="update(result._id)">update</button>
+            <button type="button" ng-click="delete(result._id)">delete</button>
+        </p>
+    </div>

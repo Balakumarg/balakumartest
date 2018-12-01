@@ -1,0 +1,20 @@
+<div class="jumbotron">
+        <h1>Update Task</h1>
+        
+   
+
+        <form>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Task Name"
+                     ng-model="data.name" >
+                    <input type="text" class="form-control" placeholder="Description"
+                     ng-model="data.descripe">
+
+                </div>
+
+              
+                <button type="submit"  ng-click="updatesave(data._id)">update</button>
+            </form>
+         
+    </div>
